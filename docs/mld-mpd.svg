@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" font-family="Inter, Arial, sans-serif">
+  <rect width="960" height="520" fill="#0f172a" rx="12"/>
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">MLD / MPD — Modèle Logique &amp; Physique de Données</text>
+  <line x1="200" y1="46" x2="760" y2="46" stroke="#6366f1" stroke-width="2"/>
+
+  <!-- Table admin -->
+  <rect x="20" y="65" width="180" height="120" fill="#1e293b" stroke="#f59e0b" stroke-width="2" rx="4"/>
+  <rect x="20" y="65" width="180" height="28" fill="#f59e0b" rx="4"/>
+  <rect x="20" y="85" width="180" height="8" fill="#f59e0b"/>
+  <text x="110" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="white">admin</text>
+  <text x="30" y="110" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="30" y="124" font-size="10" fill="#e2e8f0">username VARCHAR(60)</text>
+  <text x="30" y="138" font-size="10" fill="#e2e8f0">email VARCHAR(120) UQ</text>
+  <text x="30" y="152" font-size="10" fill="#e2e8f0">password VARCHAR(255)</text>
+  <text x="30" y="166" font-size="10" fill="#94a3b8">created_at DATETIME</text>
+
+  <!-- Table profile -->
+  <rect x="20" y="210" width="180" height="220" fill="#1e293b" stroke="#6366f1" stroke-width="2" rx="4"/>
+  <rect x="20" y="210" width="180" height="28" fill="#6366f1" rx="4"/>
+  <rect x="20" y="230" width="180" height="8" fill="#6366f1"/>
+  <text x="110" y="229" text-anchor="middle" font-size="12" font-weight="bold" fill="white">profile</text>
+  <text x="30" y="255" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="30" y="269" font-size="10" fill="#e2e8f0">firstname VARCHAR(80)</text>
+  <text x="30" y="283" font-size="10" fill="#e2e8f0">lastname VARCHAR(80)</text>
+  <text x="30" y="297" font-size="10" fill="#e2e8f0">title VARCHAR(150)</text>
+  <text x="30" y="311" font-size="10" fill="#e2e8f0">bio TEXT</text>
+  <text x="30" y="325" font-size="10" fill="#e2e8f0">email / phone / location</text>
+  <text x="30" y="339" font-size="10" fill="#e2e8f0">github / linkedin / website</text>
+  <text x="30" y="353" font-size="10" fill="#e2e8f0">avatar VARCHAR(255)</text>
+  <text x="30" y="367" font-size="10" fill="#e2e8f0">cv_file VARCHAR(255)</text>
+  <text x="30" y="381" font-size="10" fill="#94a3b8">updated_at DATETIME</text>
+
+  <!-- Table skill_categories -->
+  <rect x="230" y="65" width="195" height="110" fill="#1e293b" stroke="#f97316" stroke-width="2" rx="4"/>
+  <rect x="230" y="65" width="195" height="28" fill="#f97316" rx="4"/>
+  <rect x="230" y="85" width="195" height="8" fill="#f97316"/>
+  <text x="327" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="white">skill_categories</text>
+  <text x="240" y="110" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="240" y="124" font-size="10" fill="#e2e8f0">name VARCHAR(80)</text>
+  <text x="240" y="138" font-size="10" fill="#e2e8f0">icon VARCHAR(60) NULL</text>
+  <text x="240" y="152" font-size="10" fill="#94a3b8">sort_order TINYINT</text>
+
+  <!-- Table skills -->
+  <rect x="230" y="205" width="195" height="140" fill="#1e293b" stroke="#f97316" stroke-width="2" rx="4"/>
+  <rect x="230" y="205" width="195" height="28" fill="#f97316" rx="4"/>
+  <rect x="230" y="225" width="195" height="8" fill="#f97316"/>
+  <text x="327" y="224" text-anchor="middle" font-size="12" font-weight="bold" fill="white">skills</text>
+  <text x="240" y="250" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="240" y="264" font-size="10" fill="#94a3b8">🔗 category_id FK→skill_categories</text>
+  <text x="240" y="278" font-size="10" fill="#e2e8f0">name VARCHAR(100)</text>
+  <text x="240" y="292" font-size="10" fill="#e2e8f0">level TINYINT (0–100)</text>
+  <text x="240" y="306" font-size="10" fill="#94a3b8">sort_order TINYINT</text>
+
+  <!-- Table projects -->
+  <rect x="460" y="65" width="195" height="195" fill="#1e293b" stroke="#10b981" stroke-width="2" rx="4"/>
+  <rect x="460" y="65" width="195" height="28" fill="#10b981" rx="4"/>
+  <rect x="460" y="85" width="195" height="8" fill="#10b981"/>
+  <text x="557" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="white">projects</text>
+  <text x="470" y="110" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="470" y="124" font-size="10" fill="#e2e8f0">title VARCHAR(150)</text>
+  <text x="470" y="138" font-size="10" fill="#e2e8f0">slug VARCHAR(160) UQ</text>
+  <text x="470" y="152" font-size="10" fill="#e2e8f0">description TEXT</text>
+  <text x="470" y="166" font-size="10" fill="#e2e8f0">long_desc LONGTEXT</text>
+  <text x="470" y="180" font-size="10" fill="#e2e8f0">image / url_live / url_github</text>
+  <text x="470" y="194" font-size="10" fill="#e2e8f0">is_featured TINYINT(1)</text>
+  <text x="470" y="208" font-size="10" fill="#94a3b8">sort_order SMALLINT</text>
+  <text x="470" y="222" font-size="10" fill="#94a3b8">created_at DATETIME</text>
+
+  <!-- Table project_skills (pivot) -->
+  <rect x="460" y="290" width="195" height="90" fill="#1e293b" stroke="#6366f1" stroke-width="2" rx="4" stroke-dasharray="5,2"/>
+  <rect x="460" y="290" width="195" height="28" fill="#312e81" rx="4"/>
+  <rect x="460" y="310" width="195" height="8" fill="#312e81"/>
+  <text x="557" y="309" text-anchor="middle" font-size="12" font-weight="bold" fill="white">project_skills</text>
+  <text x="470" y="335" font-size="10" fill="#94a3b8">🔗 project_id FK→projects</text>
+  <text x="470" y="349" font-size="10" fill="#94a3b8">🔗 skill_id FK→skills</text>
+  <text x="470" y="363" font-size="10" fill="#64748b">PK (project_id, skill_id)</text>
+
+  <!-- Table experiences -->
+  <rect x="690" y="65" width="250" height="230" fill="#1e293b" stroke="#38bdf8" stroke-width="2" rx="4"/>
+  <rect x="690" y="65" width="250" height="28" fill="#38bdf8" rx="4"/>
+  <rect x="690" y="85" width="250" height="8" fill="#38bdf8"/>
+  <text x="815" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="white">experiences</text>
+  <text x="700" y="110" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="700" y="124" font-size="10" fill="#e2e8f0">type ENUM('work','education')</text>
+  <text x="700" y="138" font-size="10" fill="#e2e8f0">title VARCHAR(150)</text>
+  <text x="700" y="152" font-size="10" fill="#e2e8f0">organization VARCHAR(150)</text>
+  <text x="700" y="166" font-size="10" fill="#e2e8f0">location VARCHAR(120)</text>
+  <text x="700" y="180" font-size="10" fill="#e2e8f0">start_date DATE</text>
+  <text x="700" y="194" font-size="10" fill="#e2e8f0">end_date DATE NULL</text>
+  <text x="700" y="208" font-size="10" fill="#e2e8f0">is_current TINYINT(1)</text>
+  <text x="700" y="222" font-size="10" fill="#e2e8f0">description TEXT</text>
+  <text x="700" y="236" font-size="10" fill="#94a3b8">sort_order SMALLINT</text>
+  <text x="700" y="250" font-size="10" fill="#94a3b8">Moteur : InnoDB / utf8mb4</text>
+  <text x="700" y="264" font-size="10" fill="#94a3b8">Index : type, start_date</text>
+
+  <!-- Table contacts -->
+  <rect x="690" y="320" width="250" height="165" fill="#1e293b" stroke="#ec4899" stroke-width="2" rx="4"/>
+  <rect x="690" y="320" width="250" height="28" fill="#ec4899" rx="4"/>
+  <rect x="690" y="340" width="250" height="8" fill="#ec4899"/>
+  <text x="815" y="339" text-anchor="middle" font-size="12" font-weight="bold" fill="white">contacts</text>
+  <text x="700" y="365" font-size="10" fill="#a78bfa">🔑 id INT UNSIGNED PK AI</text>
+  <text x="700" y="379" font-size="10" fill="#e2e8f0">name VARCHAR(120)</text>
+  <text x="700" y="393" font-size="10" fill="#e2e8f0">email VARCHAR(120)</text>
+  <text x="700" y="407" font-size="10" fill="#e2e8f0">subject VARCHAR(200)</text>
+  <text x="700" y="421" font-size="10" fill="#e2e8f0">message TEXT</text>
+  <text x="700" y="435" font-size="10" fill="#e2e8f0">is_read TINYINT(1) DEFAULT 0</text>
+  <text x="700" y="449" font-size="10" fill="#94a3b8">created_at DATETIME</text>
+  <text x="700" y="463" font-size="10" fill="#94a3b8">Index : is_read, created_at</text>
+
+  <!-- Relations (FK arrows) -->
+  <!-- skill_categories → skills -->
+  <line x1="327" y1="175" x2="327" y2="205" stroke="#f97316" stroke-width="1.5"/>
+  <polygon points="327,205 322,195 332,195" fill="#f97316"/>
+
+  <!-- skills → project_skills -->
+  <line x1="425" y1="280" x2="460" y2="335" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <polygon points="460,335 452,325 465,325" fill="#6366f1"/>
+
+  <!-- projects → project_skills -->
+  <line x1="557" y1="260" x2="557" y2="290" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <polygon points="557,290 552,280 562,280" fill="#6366f1"/>
+
+  <!-- Légende -->
+  <rect x="20" y="455" width="920" height="50" fill="#1e293b" rx="6"/>
+  <text x="40" y="477" font-size="11" fill="#a78bfa">🔑 PK</text>
+  <text x="80" y="477" font-size="11" fill="#e2e8f0">= Clé primaire (AUTO_INCREMENT)</text>
+  <text x="320" y="477" font-size="11" fill="#94a3b8">🔗 FK</text>
+  <text x="360" y="477" font-size="11" fill="#e2e8f0">= Clé étrangère (ON DELETE CASCADE)</text>
+  <text x="610" y="477" font-size="11" fill="#e2e8f0">UQ = UNIQUE KEY</text>
+  <text x="730" y="477" font-size="11" fill="#e2e8f0">AI = AUTO_INCREMENT</text>
+  <text x="40" y="495" font-size="11" fill="#e2e8f0">Moteur : InnoDB   Charset : utf8mb4_unicode_ci   BDD : portfolio-refait</text>
+</svg>
