@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3bc80535e7c41aea22f1c663b3c71a80852a1268
 <?php
 // web/index.php - Point d'entrée de l'application
 
@@ -77,3 +81,9 @@ $script_dir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 $uri        = '/' . ltrim(substr(strtok($_SERVER['REQUEST_URI'], '?'), strlen($script_dir)), '/');
 
 $router->run($uri, $_SERVER['REQUEST_METHOD']);
+<<<<<<< HEAD
+=======
+=======
+<?php echo 'Structure MVC OK'; ?>
+>>>>>>> ce91a13dabf5fe53a4e23c1e41faa748047386bf
+>>>>>>> 3bc80535e7c41aea22f1c663b3c71a80852a1268
