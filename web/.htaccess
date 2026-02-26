@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /portfolio/web/
+
+# Laisser passer les vrais fichiers et dossiers
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tout le reste vers index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
