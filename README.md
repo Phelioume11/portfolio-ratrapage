@@ -39,41 +39,8 @@ portfolio/
 
 ---
 
-## Installation avec MAMP
 
-**1. Copier le projet**
-
-Copier le dossier `portfolio/` dans :
-```
-C:\MAMP\htdocs\portfolio
-```
-
-**2. Créer la base de données**
-
-Ouvrir phpMyAdmin : `http://localhost:8888/phpmyadmin`
-
-Cliquer sur l'onglet **Importer**, choisir le fichier :
-```
-portfolio/bdd/portfolio_refait.sql
-```
-
-Ou coller le contenu du fichier dans l'onglet **SQL** et exécuter.
-
-**3. Vérifier la configuration**
-
-Ouvrir `config/config.php` et vérifier ces lignes :
-```php
-define('DB_PORT', '8889');   // Port MySQL MAMP
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
-define('BASE_URL', 'http://localhost:8888/portfolio/web');
-```
-
-**4. Activer le mod_rewrite Apache**
-
-Dans MAMP > Préférences > Apache : s'assurer que le `.htaccess` est supporté.
-
-**5. Accéder au site**
+**Accéder au site**
 
 | Page | URL |
 |------|-----|
