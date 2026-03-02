@@ -77,3 +77,30 @@ $script_dir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 $uri        = '/' . ltrim(substr(strtok($_SERVER['REQUEST_URI'], '?'), strlen($script_dir)), '/');
 
 $router->run($uri, $_SERVER['REQUEST_METHOD']);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<?php echo 'Structure MVC OK'; ?>
+>>>>>>> ce91a13dabf5fe53a4e23c1e41faa748047386bf
+>>>>>>> 3bc80535e7c41aea22f1c663b3c71a80852a1268
+>>>>>>> 7a0ee74557bce5b581bc05f7734a51c27d78a601
+>>>>>>> 4b899d4dc16ee476a6c136e968372d5715e864f4
+>>>>>>> bf7d61412a72c4a0861c06bc6651b2a60c201b4e
+>>>>>>> 1265c0263b4e9a4f5d6b780b5480c6da14dad07d
+>>>>>>> cced7479088cbf1236269b21c937d38af52c21cf
+>>>>>>> 767f5d2b1a52a1d8608a0db98c06a98df24b81e4
+>>>>>>> 111294b03fa5c67873a54eb600d4a192686a5b9e
