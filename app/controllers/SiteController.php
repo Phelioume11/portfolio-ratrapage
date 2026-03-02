@@ -1,5 +1,4 @@
 <?php
-// app/controllers/SiteController.php
 // Gère les pages publiques du portfolio
 
 class SiteController extends Controller {
@@ -57,7 +56,6 @@ class SiteController extends Controller {
             $sujet   = trim($_POST['sujet']   ?? '');
             $message = trim($_POST['message'] ?? '');
 
-            // Validation simple
             if (empty($nom))    $erreurs[] = 'Le nom est requis.';
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $erreurs[] = 'L\'email n\'est pas valide.';
             if (empty($sujet))  $erreurs[] = 'Le sujet est requis.';

@@ -1,5 +1,4 @@
 <?php
-// app/models/ExperienceModel.php
 
 class ExperienceModel {
 
@@ -45,10 +44,6 @@ class ExperienceModel {
 }
 
 
-// =====================================
-// app/models/MessageModel.php
-// =====================================
-
 class MessageModel {
 
     private $db;
@@ -84,10 +79,6 @@ class MessageModel {
     }
 }
 
-
-// =====================================
-// app/models/AdminModel.php
-// =====================================
 
 class AdminModel {
 

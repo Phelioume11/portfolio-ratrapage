@@ -54,7 +54,6 @@
         <?php endif; ?>
     </div>
 
-    <!-- Actions rapides -->
     <div class="bg-slate-900 rounded-xl border border-slate-800 p-5">
         <h2 class="font-semibold text-white mb-4">Actions rapides</h2>
         <div class="grid grid-cols-2 gap-3">

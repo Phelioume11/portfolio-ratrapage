@@ -1,5 +1,4 @@
 <?php
-// app/controllers/AdminController.php
 // Interface d'administration
 
 class AdminController extends Controller {
@@ -389,7 +388,7 @@ class AdminController extends Controller {
         $this->redirect(BASE_URL . '/admin/messages');
     }
 
-    // ── Helper : Upload de fichiers ──────────────────────────
+    // ── Helper: Upload de fichiers ──────────────────────────
 
     private function handleUpload($fieldName, $allowedExtensions, $maxSize = 5242880) {
         if (empty($_FILES[$fieldName]['name'])) {

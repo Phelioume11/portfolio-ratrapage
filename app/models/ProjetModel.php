@@ -1,5 +1,4 @@
 <?php
-// app/models/ProjetModel.php
 
 class ProjetModel {
 
@@ -70,7 +69,6 @@ class ProjetModel {
         );
     }
 
-    // Génère un slug à partir du titre
     public function genererSlug($titre) {
         $slug = mb_strtolower(trim($titre));
         $slug = str_replace(['à','â','é','è','ê','î','ô','ù','û','ç'], ['a','a','e','e','e','i','o','u','u','c'], $slug);

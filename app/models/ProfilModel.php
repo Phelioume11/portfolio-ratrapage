@@ -32,7 +32,6 @@ class ProfilModel {
             $data['id'] = $profil['id'];
             $this->db->query($sql, $data);
         } else {
-            // Insertion
             $sql = 'INSERT INTO profil (prenom, nom, titre, bio, email, telephone, ville, github, linkedin) 
                     VALUES (:prenom, :nom, :titre, :bio, :email, :telephone, :ville, :github, :linkedin)';
             $this->db->query($sql, $data);

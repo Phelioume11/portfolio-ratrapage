@@ -8,7 +8,6 @@ class Router {
 
     // Ajouter une route
     public function add($methode, $url, $controller, $action) {
-        // Convertit les paramètres dynamiques {id} en regex
         $pattern = preg_replace('/\{[a-z]+\}/', '([^/]+)', $url);
         $pattern = '#^' . $pattern . '$#';
 
@@ -32,7 +31,6 @@ class Router {
             }
 
             if (preg_match($route['pattern'], $uri, $matches)) {
-                // Enlever le premier match (l'URL complète)
                 array_shift($matches);
 
                 $fichierController = ROOT_PATH . '/app/controllers/' . $route['controller'] . '.php';
