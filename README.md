@@ -54,7 +54,7 @@ portfolio/
 | Champ | Valeur |
 |-------|--------|
 | Email | `admin@portfolio.local` |
-| Mot de passe | `Admin1234!` |
+| Mot de passe | `password` |
 
 ---
 
